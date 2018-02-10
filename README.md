@@ -28,7 +28,7 @@ The plugin does not need to be inside a reveal context to run the editor.
 
 ### Notes (Mostly issues)
 
-* This was a hacky for not intened for release so excuse the quick & dirty code.
+* This was a hack not intened for release so excuse the quick & dirty code.
 * There are some challenges with Reveal applying a terrible reset! I haven't overcome these yet apart from modifying reveals styles in my own project. (avoiding iframes for reasons)
 * I avoided the majority of issues by editing carbons styles.
 * Reveal's JS also add inline styles that mess with the cursor measure component. I haven't fully overcome this yet.
