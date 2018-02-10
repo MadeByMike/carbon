@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
+    "reveal": "webpack",
     "start": "cross-env NODE_ENV=production node server.js",
     "deploy": "now --public -e NODE_ENV=production",
     "prettier": "prettier --config .prettierrc --write *.js {components,handlers,lib,pages}/*.js",
@@ -28,6 +29,7 @@
     "form-data": "^2.2.0",
     "highlight.js": "^9.12.0",
     "history": "^4.7.2",
+    "iframe-resizer": "^3.5.16",
     "lodash.debounce": "^4.0.8",
     "morgan": "^1.8.2",
     "morphmorph": "^0.0.2",
@@ -50,6 +52,12 @@
   },
   "devDependencies": {
     "all-contributors-cli": "^4.7.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
     "cross-env": "^5.1.1",
     "cypress": "^1.4.1",
     "hex2rgb": "^2.2.0",
@@ -57,8 +65,20 @@
     "lint-staged": "^6.0.0",
     "now": "^9.2.7",
     "prettier": "^1.8.1",
+    "styled-jsx": "^2.2.2",
     "uglifyjs-webpack-plugin": "1.1.2",
     "webpack": "^3.10.0"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ],
+    "plugins": [
+      "styled-jsx/babel",
+      "babel-plugin-transform-object-rest-spread",
+      "transform-class-properties"
+    ]
   },
   "now": {
     "env": {

@@ -1,10 +1,38 @@
 <p align="center"><img width=100% src="https://user-images.githubusercontent.com/10369094/31211729-591d059c-a950-11e7-86af-fa5ea3d7dbac.png"></p>
 
 <!--[![Dependencies](https://img.shields.io/david/dawnlabs/carbon.svg)](https://github.com/dawnlabs/carbon/blob/readme-badges/package.json)-->
+
 [![Build Status](https://travis-ci.org/dawnlabs/carbon.svg?branch=master)](https://travis-ci.org/dawnlabs/carbon)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 [![MIT License](https://img.shields.io/github/license/dawnlabs/carbon.svg)](https://github.com/dawnlabs/carbon/blob/master/LICENSE)
+
+## Mike's Fork (RevealJS Plugin)
+
+Uses carbon modules to build a reveal JS plugin.
+
+```
+  yarn
+  yarn run reveal
+```
+
+Plugin is built to the dist folder.
+
+Run a static server in the dist folder to test. Eg.
+
+```
+  http-server ./dist
+```
+
+The plugin does not need to be inside a reveal context to run the editor.
+
+### Notes (Mostly issues)
+
+* This was a hacky for not intened for release so excuse the quick & dirty code.
+* There are some challenges with Reveal applying a terrible reset! I haven't overcome these yet apart from modifying reveals styles in my own project. (avoiding iframes for reasons)
+* I avoided the majority of issues by editing carbons styles.
+* Reveal's JS also add inline styles that mess with the cursor measure component. I haven't fully overcome this yet.
+* Finally I'd like to be able to call the carbon components from within a dependency rather than fork that repo. Is that possible?
 
 ## Introduction
 
@@ -27,9 +55,10 @@ Visit [carbon.now.sh](https://carbon.now.sh) or read [our post](https://dawnlabs
 #### Import
 
 There are a few different ways to import code into Carbon:
-- Drop a file onto the editor
-- Append a GitHub gist id to the url  (e.g. `carbon.now.sh/GIST_ID_HERE`)
-- Paste your code directly
+
+* Drop a file onto the editor
+* Append a GitHub gist id to the url (e.g. `carbon.now.sh/GIST_ID_HERE`)
+* Paste your code directly
 
 #### Customization
 
@@ -40,17 +69,20 @@ Once you've got all of your code into Carbon, you can customize your image by ch
 After you've customized your image you can either Tweet a link to the image, or save it directly.
 
 ## Community
+
 Check out these projects our awesome community has created:
-- [Atom `carbon-now-sh`](https://atom.io/packages/carbon-now-sh) - Open up your current Atom file in Carbon with `shift-cmd-A`
-- [VS Code `carbon-now-sh`](https://marketplace.visualstudio.com/items?itemName=ericadamski.carbon-now-sh) - Open up your current VS Code file in Carbon with command `carbon`
-- [Sublime Text 3 `carbon-now-sh`](https://github.com/molnarmark/carbonSublime) - Open up the selection in your current Sublime Text 3 file with a custom bound key
-- [Vim `carbon-now-sh`](https://github.com/kristijanhusak/vim-carbon-now-sh) - Open up the selection in your current Vim/Neovim using function `CarbonNowSh()`
+
+* [Atom `carbon-now-sh`](https://atom.io/packages/carbon-now-sh) - Open up your current Atom file in Carbon with `shift-cmd-A`
+* [VS Code `carbon-now-sh`](https://marketplace.visualstudio.com/items?itemName=ericadamski.carbon-now-sh) - Open up your current VS Code file in Carbon with command `carbon`
+* [Sublime Text 3 `carbon-now-sh`](https://github.com/molnarmark/carbonSublime) - Open up the selection in your current Sublime Text 3 file with a custom bound key
+* [Vim `carbon-now-sh`](https://github.com/kristijanhusak/vim-carbon-now-sh) - Open up the selection in your current Vim/Neovim using function `CarbonNowSh()`
 
 ## Contribute
 
 If you have discovered a bug or have a feature suggestion, feel free to create an issue on Github.
 
 If you'd like to make some changes yourself, see the following:
+
 1. [Fork](https://help.github.com/articles/fork-a-repo/) this repository to your own GitHub account and then [clone](https://help.github.com/articles/cloning-a-repository/) it to your local device
 2. Make sure yarn is globally installed (`npm install -g yarn`)
 3. Run `yarn` to download required packages.
@@ -61,10 +93,12 @@ If you'd like to make some changes yourself, see the following:
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind are welcome!
 
 ## Authors
+
 Carbon is a project by <a href="http://dawnlabs.io/"><img width=8% src="https://cloud.githubusercontent.com/assets/10369094/25406306/dacebd4c-29cb-11e7-8e1c-468687cde495.png"></a>
-- Mike Fix ([@mfix22](https://github.com/mfix22))
-- Brian Dennis ([@briandennis](https://github.com/briandennis))
-- Jake Dexheimer ([@jakedex](https://github.com/jakedex))
+
+* Mike Fix ([@mfix22](https://github.com/mfix22))
+* Brian Dennis ([@briandennis](https://github.com/briandennis))
+* Jake Dexheimer ([@jakedex](https://github.com/jakedex))
 
 ## Contributors
 

@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link type="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.26.0/codemirror.min.css" />
+    <link type="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.30.0/theme/solarized.min.css" />
+    <style>
+        h1 {
+            font-family: 'Open Sans';
+            text-align: center;
+            font-size: 10em;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <style class="target">
+            /* Styles get written here */
+
+            body {
+                background: tomato;
+            }
+
+            h1 {
+                color: yellow;
+                text-shadow: 3px 3px 5px #000;
+            }
+        </style>
+
+        <h1>Heading</h1>
+
+        <div data-carbon data-target=".target">
+            body { background: tomato;} h1 { color: yellow; text-shadow: 3px 3px 5px #000; }
+        </div>
+    </section>
+
+    <script src="./carbon.now.js"></script>
+
+</body>
+
+</html>
